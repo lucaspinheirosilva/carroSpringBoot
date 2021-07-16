@@ -20,12 +20,13 @@ public class CarrosController {
     @Autowired
     private CarroService service;
 
-    @Secured({"ROLE_USER","ROLE_ADMIN"})
+
     @GetMapping
     public ResponseEntity<List<CarroDTO>> getCarroAll() {
         return ResponseEntity.ok(service.getCarros());
     }
 
+    @Secured({"ROLE_USER","ROLE_ADMIN"})
     @GetMapping("/{id}")
     public ResponseEntity getCarroByID(@PathVariable("id") Long id) {
         CarroDTO carros = service.getCarrosById(id);
