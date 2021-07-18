@@ -1,6 +1,7 @@
-package com.example.carros.model;
+package com.example.carros.service;
 
 import com.example.carros.exception.ObjectNotFound;
+import com.example.carros.model.Carro;
 import com.example.carros.model.dto.CarroDTO;
 import com.example.carros.repository.CarroRepository;
 

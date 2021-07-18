@@ -2,16 +2,13 @@ package com.example.carros;
 
 import com.example.carros.exception.ObjectNotFound;
 import com.example.carros.model.Carro;
-import com.example.carros.model.CarroService;
+import com.example.carros.service.CarroService;
 import com.example.carros.model.dto.CarroDTO;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
-
-import java.util.Optional;
 
 
 @SpringBootTest
